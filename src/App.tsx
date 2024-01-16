@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Protected from "./layouts/protected";
 import { fetchUserIfTokenExists } from "./utils/api";
-import Login from "./pages/login";
 import NotFound from "./pages/404";
 import Home from "./pages/home";
 import { Dashboard } from "./pages";
@@ -45,10 +44,14 @@ const router = createBrowserRouter(
         </Route>
       </Route>
       <Route path="/" element={<Home />} />
-      <Route>
-        <Route path="/login" element={<Login />} />
-      </Route>
-      <Route path="*" element={<NotFound />} />
+      <Route
+        path="*"
+        element={
+          <div className="min-h-screen flex">
+            <NotFound />
+          </div>
+        }
+      />
     </Route>
   )
 );
