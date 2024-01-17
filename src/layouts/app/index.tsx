@@ -4,10 +4,12 @@ import Footer from "./footer";
 
 export default function AppLayout() {
   return (
-    <div className="w-full grid grid-cols-2 min-h-screen max-w-maxAppWidth mx-auto">
+    <div className="w-full grid grid-cols-2 min-h-screen mx-auto">
       <LeftSide />
-      <div className="flex flex-col gap-8">
-        <Outlet />
+      <div className="w-full bg-white flex flex-col">
+        <div className="flex-grow max-w-[900px] w-full flex flex-col py-12 justify-center">
+          <Outlet />
+        </div>
         <Footer />
       </div>
     </div>

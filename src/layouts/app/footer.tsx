@@ -5,15 +5,15 @@ import { BsLinkedin } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-center w-full gap-12 bg-Secondary p-4 py-4">
+    <footer className="flex items-center justify-center w-full gap-12 bg-secondary-950 p-4 py-1">
       <IconButton aria-label="henzyd-github">
         <a href="https://github.com/henzyd" target="_blank" rel="noopener noreferrer">
-          <AiOutlineGithub className="text-2xl" fill={"white"} />
+          <AiOutlineGithub className="text-xl" fill={"white"} />
         </a>
       </IconButton>
       <IconButton aria-label="henzyd-email">
         <a href="mailto:anachunauchechukwu@gmail.com">
-          <TfiEmail className="text-2xl" fill={"white"} />
+          <TfiEmail className="text-xl" fill={"white"} />
         </a>
       </IconButton>
       <IconButton aria-label="henzyd-linkedin">
@@ -22,7 +22,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <BsLinkedin fill={"#0076B2"} className={"text-2xl text-white"} />
+          <BsLinkedin fill={"#0076B2"} className={"text-xl text-white"} />
         </a>
       </IconButton>
     </footer>

@@ -5,7 +5,7 @@ export default function LeftSide() {
   return (
     <aside className="flex-col flex justify-center items-end w-full relative tabletAndBelow:hidden bg-primary-50 min-h-screen">
       <div className="p-6 flex-col flex justify-center items-center max-w-[900px]">
-        <div className="absolute z-10 top-[35px] left-[35px]">
+        <div className="absolute z-10 top-[20px] left-[35px]">
           <Logo />
         </div>
         <div className="flex flex-col gap-4 w-[75%] items-center py-12">
@@ -22,7 +22,7 @@ export default function LeftSide() {
               href="https://www.linkedin.com/in/uchechukwu-anachuna/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="hover:underline outline-0"
             >
               Henry
             </a>{" "}

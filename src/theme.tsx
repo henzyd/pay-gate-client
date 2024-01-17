@@ -15,6 +15,19 @@ const theme = createTheme({
       800: "#9c1d10",
       900: "#7e1b10",
     },
+    secondary: {
+      main: "#241F21",
+      50: "#f8f7f8",
+      100: "#f0eeef",
+      200: "#dfd8db",
+      300: "#c2b7bd",
+      400: "#a18f97",
+      500: "#86717b",
+      600: "#6e5b63",
+      700: "#594b51",
+      800: "#4c4046",
+      900: "#42383c",
+    },
   },
   components: {
     MuiOutlinedInput: {
