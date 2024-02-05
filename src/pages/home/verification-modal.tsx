@@ -39,13 +39,13 @@ export default function VerificationModal({ open, setOpen, data }: VerificationM
       }}
     >
       <div className="flex flex-col gap-2 w-full">
-        <header>
-          <h1 className="text-xl font-semibold">Verify Email</h1>
+        <header className="flex flex-col gap-4">
+          <h1 className="text-lg font-semibold">Verify Email</h1>
           <p className="text-sm text-center">
             We sent a code to <span className="font-semibold">{data?.email}</span>
           </p>
         </header>
-        <div className="flex flex-col items-center gap-12 py-4 w-full">
+        <div className="flex flex-col items-center gap-9 py-4 pb-1 w-full">
           <OtpInput
             value={otp}
             onChange={(value) => {
@@ -56,10 +56,13 @@ export default function VerificationModal({ open, setOpen, data }: VerificationM
                 setIsComplete(false);
               }
             }}
+            TextFieldsProps={{
+              className: "w-[2.5rem]",
+            }}
           />
           <Button
             type="submit"
-            className="w-full !p-4 mt-5"
+            className="w-full"
             disabled={!isComplete}
             onClick={async () => {
               const response = await verifyEmail.mutateAsync({
@@ -75,7 +78,7 @@ export default function VerificationModal({ open, setOpen, data }: VerificationM
             Verify
           </Button>
         </div>
-        <p className="text-sm">
+        <p className="text-sm text-center">
           Didn't get a code?{" "}
           <button
             className="text-primary-600 font-semibold"

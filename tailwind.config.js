@@ -3,6 +3,9 @@ export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        Rubik: ["Rubik", "sans-serif"],
+      },
       maxWidth: {
         maxAppWidth: "1800px",
       },

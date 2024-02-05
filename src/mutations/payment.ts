@@ -30,7 +30,7 @@ export function useEmailVerification() {
       return response;
     },
     onSuccess: () => {
-      notifySuccess("Successfully verified email");
+      notifySuccess("Successfully verified email, please fill payment form.");
     },
     onError: (error) => {
       if (isAxiosError(error)) {
