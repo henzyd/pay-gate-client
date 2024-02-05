@@ -3,7 +3,7 @@ import Payment from "~/assets/illustrations/payment.png";
 
 export default function LeftSide() {
   return (
-    <aside className="flex-col flex justify-center items-end w-full relative tabletAndBelow:hidden bg-primary-50 min-h-screen">
+    <aside className="flex-col flex justify-center items-end w-full relative [@media(max-width:768px)]:hidden bg-primary-50 min-h-screen">
       <div className="p-6 flex-col flex justify-center items-center max-w-[900px]">
         <div className="absolute z-10 top-[20px] left-[35px]">
           <Logo />

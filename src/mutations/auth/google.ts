@@ -10,7 +10,7 @@ export default function useGoogleAuth() {
     mutationFn: async function withGoogle(data: { auth_token: string }) {
       const { data: response } = await axios.post("auth/google/", data);
 
-      return response as User & {
+      return response as CurrentUser & {
         access: string;
         refresh: string;
       };
