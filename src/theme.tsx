@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#EE3308",
+      main: "#ee3308",
       50: "#fff4ed",
       100: "#ffe6d4",
       200: "#ffc9a8",
@@ -36,6 +36,13 @@ const theme = createTheme({
           "& .MuiOutlinedInput-input": {
             padding: "11px 13.5px",
           },
+        },
+      },
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          boxShadow: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
         },
       },
     },

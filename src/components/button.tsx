@@ -5,6 +5,7 @@ export default function Button({
   loading,
   variant = "contained",
   className,
+  size = "medium",
   sx,
   ...props
 }: LoadingButtonProps) {
@@ -12,7 +13,7 @@ export default function Button({
     <LoadingButton
       variant={variant}
       className={twMerge(
-        `flex justify-center items-center !normal-case !text-[0.9rem] !p-3 !px-5 !rounded-md !text-white`,
+        `flex justify-center items-center !normal-case !rounded-md !p-3 !text-white !font-Rubik !font-medium`,
         loading && `opacity-40 !cursor-not-allowed !shadow-none`,
         `${className}`
       )}
@@ -20,6 +21,7 @@ export default function Button({
       sx={{
         ...sx,
       }}
+      size={size}
       loading={loading}
       disableElevation
     >
